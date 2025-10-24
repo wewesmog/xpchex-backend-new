@@ -1,0 +1,3 @@
+C:\Users\KEN22101\AppData\Roaming\npm
+└── yarn@1.22.22
+
