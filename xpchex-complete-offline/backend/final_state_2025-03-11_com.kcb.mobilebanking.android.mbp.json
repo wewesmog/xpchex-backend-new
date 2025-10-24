@@ -1,0 +1,2312 @@
+{
+  "daily_summary": {
+    "summary_date": "2025-06-27",
+    "app_id": "com.example.app",
+    "error": null,
+    "sentiment_distribution": {
+      "positive": 0.35,
+      "neutral": 0.1,
+      "negative": 0.55
+    },
+    "issue_groups": [
+      {
+        "normalized_description": "App crashes frequently",
+        "count": 1,
+        "similar_descriptions": [
+          "App crashes frequently"
+        ],
+        "severity_distribution": {
+          "critical": 1
+        },
+        "confidence_sum": 0.95,
+        "avg_priority_score": 0.95,
+        "feature_areas": {
+          "core_functionality": 1
+        }
+      }
+    ],
+    "feature_areas": {
+      "User Experience": {
+        "total_issues": 0,
+        "severity_distribution": {},
+        "issue_types": {},
+        "avg_sentiment": 0.8
+      },
+      "Stability": {
+        "total_issues": 1,
+        "severity_distribution": {
+          "critical": 1
+        },
+        "issue_types": {
+          "bug": 1
+        },
+        "avg_sentiment": -0.9
+      }
+    },
+    "actions": [
+      {
+        "type": "fix",
+        "count": 1,
+        "effort_distribution": {
+          "high": 1
+        },
+        "timeline_distribution": {
+          "1 week": 1
+        },
+        "related_issues": [
+          "ISS-001"
+        ]
+      }
+    ],
+    "business_impact": {
+      "severity": "high",
+      "affected_areas": [
+        "user_experience",
+        "app_rating"
+      ],
+      "metrics_impact": {
+        "user_retention": true,
+        "app_rating": true,
+        "user_acquisition": false
+      },
+      "recommendation": "Prioritize fixing crashes",
+      "confidence": 0.95
+    },
+    "error": null
+  },
+  "daily_summary_request": {
+    "review_date": "2025-03-11",
+    "app_id": "com.kcb.mobilebanking.android.mbp",
+    "reviews": [
+      {
+        "review_date": "2025-03-11",
+        "app_id": "com.kcb.mobilebanking.android.mbp",
+        "reviews": [
+          {
+            "content": "Terrible experience I can't withdraw to my mpesa every single time fix your app",
+            "analysis": {
+              "aspects": {
+                "error": null,
+                "topics": [
+                  {
+                    "name": "User Experience",
+                    "keywords": [
+                      "UI",
+                      "beautiful",
+                      "easy to use",
+                      "dark mode"
+                    ],
+                    "sentiment": "positive",
+                    "confidence": 0.92
+                  },
+                  {
+                    "name": "App Issues",
+                    "keywords": [
+                      "crashes",
+                      "battery drain"
+                    ],
+                    "sentiment": "negative",
+                    "confidence": 0.88
+                  }
+                ],
+                "user_intent": {
+                  "primary": "provide_feedback",
+                  "secondary": "report_issues",
+                  "confidence": 0.85
+                },
+                "identified_features": [
+                  {
+                    "name": "User Interface",
+                    "category": "UI/UX",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 35,
+                          "start": 0
+                        },
+                        "text": "The new UI is beautiful and easy to use",
+                        "context": "The new UI is beautiful and easy to use"
+                      },
+                      {
+                        "span": {
+                          "end": 86,
+                          "start": 65
+                        },
+                        "text": "new dark mode feature",
+                        "context": "Love the new dark mode feature!"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.9,
+                      "confidence": 0.95
+                    },
+                    "importance_score": 0.8
+                  },
+                  {
+                    "name": "App Crashing",
+                    "category": "Functionality",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 77,
+                          "start": 40
+                        },
+                        "text": "app crashes when uploading photos",
+                        "context": "app crashes when uploading photos"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.8,
+                      "confidence": 0.9
+                    },
+                    "importance_score": 0.85
+                  },
+                  {
+                    "name": "Battery Drain",
+                    "category": "Performance",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 108,
+                          "start": 80
+                        },
+                        "text": "drains my battery too fast",
+                        "context": "drains my battery too fast"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.9,
+                      "confidence": 0.95
+                    },
+                    "importance_score": 0.9
+                  }
+                ]
+              },
+              "roadmap": {
+                "error": null,
+                "execution_plan": {
+                  "quarters": [
+                    {
+                      "theme": "Stability Improvements",
+                      "quarter": "Q1",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "Stability Fix Update",
+                          "initiative_id": "INIT-001",
+                          "success_criteria": [
+                            "Reduction in crash reports by 90% after release."
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 80.0
+                        }
+                      ]
+                    },
+                    {
+                      "theme": "Feature Development",
+                      "quarter": "Q2",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "Data Export Feature",
+                          "initiative_id": "INIT-002",
+                          "success_criteria": [
+                            "At least 10% of users utilize the export feature within the first month."
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 60.0
+                        },
+                        {
+                          "team": "product_design",
+                          "allocation_percentage": 30.0
+                        }
+                      ]
+                    }
+                  ],
+                  "success_metrics": [
+                    {
+                      "metric": "crash_rate",
+                      "data_source": "error_tracking_tool",
+                      "target_value": 0.01,
+                      "current_value": 0.1,
+                      "measurement_frequency": "daily"
+                    },
+                    {
+                      "metric": "data_export_usage",
+                      "data_source": "user_engagement_metrics",
+                      "target_value": 0.1,
+                      "current_value": 0.0,
+                      "measurement_frequency": "monthly"
+                    }
+                  ]
+                },
+                "strategic_initiatives": [
+                  {
+                    "id": "INIT-001",
+                    "type": "fix",
+                    "title": "Address App Crashing Issues",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.9,
+                          "reference_id": "REVIEW-CRASH-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "short_term",
+                      "milestones": [
+                        {
+                          "title": "Root Cause Analysis",
+                          "description": "Identify the underlying reasons for the app crashes.",
+                          "target_date": "2025-01-15"
+                        },
+                        {
+                          "title": "Release Fix",
+                          "description": "Deploy an update addressing the identified issues.",
+                          "target_date": "2025-01-30"
+                        }
+                      ],
+                      "dependencies": [],
+                      "target_quarter": "Q1",
+                      "estimated_duration": "2 weeks"
+                    },
+                    "description": "Investigate and resolve issues causing app crashes to enhance user experience and stability.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "impact_on_users",
+                          "score": 0.9,
+                          "weight": 0.7,
+                          "justification": "Crashes significantly reduce user satisfaction."
+                        }
+                      ],
+                      "overall_score": 0.88,
+                      "cost_benefit_ratio": 0.8,
+                      "strategic_alignment": 0.9
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Improve User Retention",
+                          "metrics": [
+                            {
+                              "name": "user_retention_rate",
+                              "predicted_change": 0.15
+                            }
+                          ],
+                          "impact_score": 0.85
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "general_app_usage"
+                        ],
+                        "improvement_areas": [
+                          "stability",
+                          "performance"
+                        ],
+                        "predicted_satisfaction_impact": 0.75
+                      }
+                    }
+                  },
+                  {
+                    "id": "INIT-002",
+                    "type": "feature",
+                    "title": "Enhance User Data Export Options",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.85,
+                          "reference_id": "REVIEW-EXPORT-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "medium_term",
+                      "milestones": [
+                        {
+                          "title": "Feature Specification",
+                          "description": "Complete specifications for the export feature.",
+                          "target_date": "2025-03-01"
+                        },
+                        {
+                          "title": "Feature Launch",
+                          "description": "Release the new data export feature to users.",
+                          "target_date": "2025-04-15"
+                        }
+                      ],
+                      "dependencies": [],
+                      "target_quarter": "Q2",
+                      "estimated_duration": "1-2 months"
+                    },
+                    "description": "Develop a feature that allows users to export their data to different formats including Excel.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "user_request_frequency",
+                          "score": 0.8,
+                          "weight": 0.6,
+                          "justification": "This feature has been a frequent request from users."
+                        }
+                      ],
+                      "overall_score": 0.76,
+                      "cost_benefit_ratio": 0.7,
+                      "strategic_alignment": 0.7
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Increase User Engagement",
+                          "metrics": [
+                            {
+                              "name": "feature_usage_rate",
+                              "predicted_change": 0.2
+                            }
+                          ],
+                          "impact_score": 0.75
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "data_management"
+                        ],
+                        "improvement_areas": [
+                          "data_accessibility"
+                        ],
+                        "predicted_satisfaction_impact": 0.65
+                      }
+                    }
+                  }
+                ]
+              },
+              "review_id": "072f7e30-1b97-467a-b27b-0cfb9e076f29",
+              "sentiment": {
+                "error": null,
+                "overall": {
+                  "score": 0.2,
+                  "confidence": 0.85,
+                  "distribution": {
+                    "neutral": 0.1,
+                    "negative": 0.5,
+                    "positive": 0.4
+                  },
+                  "classification": "mixed"
+                },
+                "emotions": {
+                  "primary": {
+                    "emotion": "frustration",
+                    "confidence": 0.75
+                  },
+                  "secondary": {
+                    "emotion": "joy",
+                    "confidence": 0.25
+                  },
+                  "emotion_scores": {
+                    "joy": 0.25,
+                    "frustration": 0.75
+                  }
+                },
+                "segments": [
+                  {
+                    "span": {
+                      "end": 67,
+                      "start": 0
+                    },
+                    "text": "I love this app! It's so easy to use and has all the features I need.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.8,
+                      "confidence": 0.9
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 125,
+                      "start": 68
+                    },
+                    "text": "I'm so frustrated with the app because it keeps crashing.",
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.7,
+                      "confidence": 0.95
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 180,
+                      "start": 126
+                    },
+                    "text": "I'm so happy with the app because it's so easy to use.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.6,
+                      "confidence": 0.85
+                    }
+                  }
+                ]
+              },
+              "action_items": {
+                "error": null,
+                "issues": [
+                  {
+                    "id": "ISS-001",
+                    "type": "bug",
+                    "context": {
+                      "impact": "prevents core functionality",
+                      "feature_area": "file_upload",
+                      "reproducibility": "specific_condition"
+                    },
+                    "severity": "high",
+                    "confidence": 0.95,
+                    "description": "App crashes when trying to upload large files",
+                    "is_actionable": true,
+                    "priority_score": 0.9,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-002",
+                    "type": "ux_issue",
+                    "context": {
+                      "impact": "affects usability",
+                      "feature_area": "ui_theme",
+                      "reproducibility": "consistent"
+                    },
+                    "severity": "medium",
+                    "confidence": 0.85,
+                    "description": "Dark mode does not work properly in settings menu",
+                    "is_actionable": true,
+                    "priority_score": 0.7,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-003",
+                    "type": "performance",
+                    "context": {
+                      "impact": "affects user satisfaction",
+                      "feature_area": "system_resources",
+                      "reproducibility": null
+                    },
+                    "severity": "high",
+                    "confidence": 0.8,
+                    "description": "Battery life has worsened after the last update",
+                    "is_actionable": false,
+                    "priority_score": 0.85,
+                    "needs_investigation": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-001",
+                    "confidence": 0.9,
+                    "description": "Implement file upload size validation and optimize upload process",
+                    "prerequisites": [
+                      "Investigate current file upload size limits"
+                    ],
+                    "estimated_effort": "medium",
+                    "suggested_timeline": "short-term"
+                  },
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-002",
+                    "confidence": 0.85,
+                    "description": "Ensure dark mode is applied consistently across all screens",
+                    "prerequisites": [],
+                    "estimated_effort": "low",
+                    "suggested_timeline": "short-term"
+                  }
+                ],
+                "business_impact": {
+                  "severity": "high",
+                  "confidence": 0.9,
+                  "affected_areas": [
+                    "user_experience",
+                    "core_functionality",
+                    "system_performance"
+                  ],
+                  "metrics_impact": {
+                    "app_rating": true,
+                    "user_retention": true,
+                    "user_acquisition": false
+                  },
+                  "recommendation": "Prioritize fixing the crashing issue and ensure dark mode consistency."
+                },
+                "unactionable_reason": "Battery consumption issue requires investigation to identify root cause before actions can be determined."
+              },
+              "opportunities": {
+                "error": null,
+                "market_opportunities": [
+                  {
+                    "id": "OPP-002",
+                    "type": "feature_gap",
+                    "title": "Team Collaboration Features",
+                    "evidence": {
+                      "review_count": 1,
+                      "user_sentiment": -0.2,
+                      "review_snippets": [
+                        {
+                          "text": "my team can't work together effectively",
+                          "review_id": "REV-002",
+                          "sentiment": -0.5
+                        }
+                      ],
+                      "mention_frequency": 0.8
+                    },
+                    "description": "Develop collaborative features to enhance team productivity and compete with other platforms.",
+                    "implementation": {
+                      "risks": [
+                        {
+                          "severity": "medium",
+                          "mitigation": "Incremental rollout with user feedback loops",
+                          "description": "Potential feature overload may confuse users"
+                        }
+                      ],
+                      "complexity": "medium",
+                      "dependencies": [
+                        "user feedback",
+                        "feature testing"
+                      ],
+                      "estimated_timeline": "2-3 months",
+                      "required_resources": [
+                        "development_team",
+                        "product_manager"
+                      ]
+                    },
+                    "prioritization": {
+                      "score": 0.9,
+                      "factors": [
+                        {
+                          "name": "user demand for collaboration",
+                          "score": 0.95,
+                          "weight": 0.5
+                        },
+                        {
+                          "name": "competitive necessity",
+                          "score": 0.85,
+                          "weight": 0.5
+                        }
+                      ],
+                      "time_sensitivity": "medium",
+                      "strategic_alignment": 0.75
+                    },
+                    "impact_analysis": {
+                      "user_segments": [
+                        "team_users",
+                        "enterprise_users"
+                      ],
+                      "affected_metrics": [
+                        {
+                          "metric": "user_retention",
+                          "confidence": 0.9,
+                          "predicted_impact": 0.5
+                        },
+                        {
+                          "metric": "user_acquisition",
+                          "confidence": 0.8,
+                          "predicted_impact": 0.45
+                        }
+                      ],
+                      "potential_impact": "high",
+                      "competitive_position": {
+                        "current_state": "behind in collaborative capabilities",
+                        "potential_advantage": "strong existing user base and interface",
+                        "competitor_comparison": [
+                          {
+                            "status": "ahead",
+                            "competitor": "Competitor X"
+                          }
+                        ]
+                      }
+                    },
+                    "confidence_score": 0.85
+                  }
+                ]
+              },
+              "aspects_attempts": 0,
+              "roadmap_attempts": 0,
+              "positive_feedback": {
+                "error": null,
+                "key_values": [
+                  {
+                    "frequency": 2,
+                    "user_quote": "I can accomplish tasks faster now.",
+                    "description": "Enhanced productivity through intuitive features",
+                    "impact_area": "productivity",
+                    "sentiment_score": 0.92
+                  }
+                ],
+                "delight_factors": [
+                  {
+                    "wow_factor": 0.88,
+                    "description": "User-friendly design that simplifies complex tasks",
+                    "viral_potential": 0.85,
+                    "unexpected_benefit": "Allows users to focus on critical tasks instead of mundane ones."
+                  }
+                ],
+                "success_stories": [
+                  {
+                    "title": "Users experience significant time savings with automation",
+                    "impact": "Users reported completing projects faster and with less effort.",
+                    "description": "A user highlighted the difference automation made in their daily workflow.",
+                    "user_segment": "business_users",
+                    "supporting_metrics": {
+                      "time_saved_hours": 3.0
+                    },
+                    "replication_potential": 0.88
+                  }
+                ],
+                "competitive_edges": {
+                  "Automation": "Leading in automating workflows compared to competitors."
+                },
+                "retention_drivers": [
+                  {
+                    "retention_impact": 0.9,
+                    "feature_or_aspect": "Automation Features",
+                    "repeat_usage_rate": null,
+                    "user_testimonials": [
+                      "I can't imagine going back to manual processes!"
+                    ],
+                    "user_stickiness_factor": 0.95
+                  }
+                ],
+                "satisfaction_score": 0.94,
+                "successful_features": [
+                  {
+                    "feature_name": "Task Automation",
+                    "user_segments": [
+                      "busy_professionals",
+                      "small_business_owners"
+                    ],
+                    "success_metrics": {
+                      "efficiency_score": 0.95
+                    },
+                    "positive_mentions": [
+                      "time-saving",
+                      "automated tasks"
+                    ],
+                    "competitive_advantage": "Automates repetitive tasks more effectively than competitors."
+                  }
+                ],
+                "growth_opportunities": [
+                  "Introduce more automation features",
+                  "Enhance user onboarding process for new features"
+                ],
+                "brand_advocates_percentage": 0.85
+              },
+              "sentiment_attempts": 0,
+              "action_items_attempts": 0,
+              "opportunities_attempts": 0,
+              "response_recommendation": {
+                "error": null,
+                "context": {
+                  "platform": null,
+                  "user_segment": null,
+                  "related_issues": [
+                    "crashing_issue"
+                  ],
+                  "user_sentiment": 0.7,
+                  "related_positives": [
+                    "dark_mode_love"
+                  ]
+                },
+                "metadata": {},
+                "strategy": {
+                  "tone": {
+                    "primary_tone": "appreciative",
+                    "secondary_tone": "apologetic",
+                    "formality_level": "neutral",
+                    "personalization_level": 0.8
+                  },
+                  "priority": "high",
+                  "key_points": [
+                    "Acknowledge positive feedback about dark mode.",
+                    "Apologize for crashes and assure investigation.",
+                    "Thank user for their feedback."
+                  ],
+                  "commitments": [
+                    {
+                      "timeline": "within 24 hours",
+                      "conditions": [],
+                      "commitment_type": "investigate",
+                      "confidence_level": 0.9
+                    }
+                  ],
+                  "should_respond": true,
+                  "public_response": true
+                },
+                "response_id": "RESP-001",
+                "follow_up_needed": false,
+                "response_required": true,
+                "follow_up_timeline": null,
+                "suggested_response": "Thank you for your feedback! We're thrilled you love the new dark mode. We apologize for the crashes you've experienced and are actively investigating this issue to provide a stable experience. Your input is valuable!",
+                "response_guidelines": [
+                  "Do: Acknowledge both positive and negative points.",
+                  "Do: Express gratitude for feedback.",
+                  "Do: Assure the user that issues are being addressed.",
+                  "Don't: Make specific promises about fix timelines unless certain."
+                ],
+                "alternative_responses": [
+                  "We appreciate your kind words about the dark mode! We're sorry to hear about the crashes and are working to fix them. Thanks for letting us know!",
+                  "Thanks for your review! Glad you like the dark mode. We're aware of the crashing issue and are on it. Your feedback helps us improve!"
+                ]
+              },
+              "positive_feedback_attempts": 0,
+              "response_recommendation_attempts": 0
+            },
+            "created_at": "2025-03-11T21:28:12+00:00"
+          },
+          {
+            "content": "I downloaded the app to help me set a new pin since i had forgotten the old one. During the verification process, the codes were sent so many times but I couldn't key them in into the spaces provided. Tried so many times until I stopped because I was afraid I'd be blocked. Called customer care, and no one picked to help me out.",
+            "analysis": {
+              "aspects": {
+                "error": null,
+                "topics": [
+                  {
+                    "name": "User Experience",
+                    "keywords": [
+                      "UI",
+                      "beautiful",
+                      "easy to use",
+                      "dark mode",
+                      "app crashes",
+                      "battery drain"
+                    ],
+                    "sentiment": "mixed",
+                    "confidence": 0.88
+                  },
+                  {
+                    "name": "App Functionality",
+                    "keywords": [
+                      "app crashes",
+                      "uploading photos"
+                    ],
+                    "sentiment": "negative",
+                    "confidence": 0.85
+                  }
+                ],
+                "user_intent": {
+                  "primary": "report_issues",
+                  "secondary": "provide_feedback",
+                  "confidence": 0.87
+                },
+                "identified_features": [
+                  {
+                    "name": "User Interface",
+                    "category": "UI/UX",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 35,
+                          "start": 0
+                        },
+                        "text": "The new UI is beautiful and easy to use",
+                        "context": "The new UI is beautiful and easy to use"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.85,
+                      "confidence": 0.95
+                    },
+                    "importance_score": 0.9
+                  },
+                  {
+                    "name": "App Crashes",
+                    "category": "Functionality",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 77,
+                          "start": 50
+                        },
+                        "text": "app crashes when uploading photos",
+                        "context": "app crashes when uploading photos"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.75,
+                      "confidence": 0.9
+                    },
+                    "importance_score": 0.85
+                  },
+                  {
+                    "name": "Battery Drain",
+                    "category": "Performance",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 108,
+                          "start": 82
+                        },
+                        "text": "drains my battery too fast",
+                        "context": "drains my battery too fast"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.8,
+                      "confidence": 0.92
+                    },
+                    "importance_score": 0.95
+                  },
+                  {
+                    "name": "Dark Mode Feature",
+                    "category": "Feature",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 134,
+                          "start": 110
+                        },
+                        "text": "love the new dark mode feature",
+                        "context": "Love the new dark mode feature!"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.9,
+                      "confidence": 0.93
+                    },
+                    "importance_score": 0.8
+                  }
+                ]
+              },
+              "roadmap": {
+                "error": null,
+                "execution_plan": {
+                  "quarters": [
+                    {
+                      "theme": "Stability Improvement",
+                      "quarter": "Q3",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "App Stability Fix",
+                          "initiative_id": "INIT-001",
+                          "success_criteria": [
+                            "User-reported crashes decrease by 90%"
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 70.0
+                        }
+                      ]
+                    },
+                    {
+                      "theme": "Feature Development",
+                      "quarter": "Q4",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "Data Export Feature",
+                          "initiative_id": "INIT-002",
+                          "success_criteria": [
+                            "20% of users engage with the export feature within the first month"
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 60.0
+                        },
+                        {
+                          "team": "product_design",
+                          "allocation_percentage": 30.0
+                        }
+                      ]
+                    }
+                  ],
+                  "success_metrics": [
+                    {
+                      "metric": "user_crash_rate",
+                      "data_source": "analytics",
+                      "target_value": 0.01,
+                      "current_value": 0.1,
+                      "measurement_frequency": "daily"
+                    },
+                    {
+                      "metric": "data_export_feature_usage",
+                      "data_source": "user_activity_tracker",
+                      "target_value": 0.2,
+                      "current_value": 0.0,
+                      "measurement_frequency": "monthly"
+                    }
+                  ]
+                },
+                "strategic_initiatives": [
+                  {
+                    "id": "INIT-001",
+                    "type": "fix",
+                    "title": "Address App Crashing Issues",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.9,
+                          "reference_id": "REVIEW-CRASH-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "short_term",
+                      "milestones": [
+                        {
+                          "title": "Crash Analysis Completed",
+                          "description": "Identify the root causes of crashing incidents.",
+                          "target_date": "2025-07-20"
+                        },
+                        {
+                          "title": "Hotfix Released",
+                          "description": "Deploy a fix to resolve critical crashing bugs.",
+                          "target_date": "2025-07-25"
+                        }
+                      ],
+                      "dependencies": [],
+                      "target_quarter": "Q3",
+                      "estimated_duration": "2 weeks"
+                    },
+                    "description": "Investigate the causes of app crashes reported by users to enhance app stability.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "user_feedback",
+                          "score": 0.9,
+                          "weight": 0.7,
+                          "justification": "High frequency of crash reports impacts user experience."
+                        }
+                      ],
+                      "overall_score": 0.88,
+                      "cost_benefit_ratio": 0.8,
+                      "strategic_alignment": 0.9
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Improve User Retention",
+                          "metrics": [
+                            {
+                              "name": "user_retention_rate",
+                              "predicted_change": 0.15
+                            }
+                          ],
+                          "impact_score": 0.85
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "overall_app_usage"
+                        ],
+                        "improvement_areas": [
+                          "app_stability",
+                          "user_satisfaction"
+                        ],
+                        "predicted_satisfaction_impact": 0.75
+                      }
+                    }
+                  },
+                  {
+                    "id": "INIT-002",
+                    "type": "feature",
+                    "title": "Enhance Data Export Functionality",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.85,
+                          "reference_id": "REVIEW-EXPORT-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "medium_term",
+                      "milestones": [
+                        {
+                          "title": "Design Approval",
+                          "description": "Finalize UI/UX designs for the export feature.",
+                          "target_date": "2025-09-15"
+                        },
+                        {
+                          "title": "Feature Launch",
+                          "description": "Release the data export feature to users.",
+                          "target_date": "2025-10-20"
+                        }
+                      ],
+                      "dependencies": [
+                        "finalize_data_structure"
+                      ],
+                      "target_quarter": "Q4",
+                      "estimated_duration": "1 month"
+                    },
+                    "description": "Develop a feature for users to export their data directly to Excel.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "user_demand",
+                          "score": 0.8,
+                          "weight": 0.6,
+                          "justification": "User feedback indicates a strong need for data export capabilities."
+                        }
+                      ],
+                      "overall_score": 0.76,
+                      "cost_benefit_ratio": 0.7,
+                      "strategic_alignment": 0.75
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Increase User Engagement",
+                          "metrics": [
+                            {
+                              "name": "feature_usage_rate",
+                              "predicted_change": 0.2
+                            }
+                          ],
+                          "impact_score": 0.78
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "data_management"
+                        ],
+                        "improvement_areas": [
+                          "data_accessibility",
+                          "user_engagement"
+                        ],
+                        "predicted_satisfaction_impact": 0.65
+                      }
+                    }
+                  }
+                ]
+              },
+              "review_id": "43b1d4c9-e38f-4013-84bf-06f20d50f369",
+              "sentiment": {
+                "error": null,
+                "overall": {
+                  "score": 0.0,
+                  "confidence": 0.85,
+                  "distribution": {
+                    "neutral": 0.0,
+                    "negative": 0.6,
+                    "positive": 0.4
+                  },
+                  "classification": "mixed"
+                },
+                "emotions": {
+                  "primary": {
+                    "emotion": "frustration",
+                    "confidence": 0.7
+                  },
+                  "secondary": {
+                    "emotion": "joy",
+                    "confidence": 0.3
+                  },
+                  "emotion_scores": {
+                    "joy": 0.4,
+                    "frustration": 0.6
+                  }
+                },
+                "segments": [
+                  {
+                    "span": {
+                      "end": 67,
+                      "start": 0
+                    },
+                    "text": "I love this app! It's so easy to use and has all the features I need.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.9,
+                      "confidence": 0.95
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 125,
+                      "start": 68
+                    },
+                    "text": "I'm so frustrated with the app because it keeps crashing.",
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.8,
+                      "confidence": 0.9
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 180,
+                      "start": 126
+                    },
+                    "text": "I'm so happy with the app because it's so easy to use.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.85,
+                      "confidence": 0.92
+                    }
+                  }
+                ]
+              },
+              "action_items": {
+                "error": null,
+                "issues": [
+                  {
+                    "id": "ISS-001",
+                    "type": "bug",
+                    "context": {
+                      "impact": "prevents core functionality",
+                      "feature_area": "file_upload",
+                      "reproducibility": "specific_condition"
+                    },
+                    "severity": "high",
+                    "confidence": 0.95,
+                    "description": "App keeps crashing while trying to upload large files",
+                    "is_actionable": true,
+                    "priority_score": 0.9,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-002",
+                    "type": "ux_issue",
+                    "context": {
+                      "impact": "affects usability",
+                      "feature_area": "ui_theme",
+                      "reproducibility": "consistent"
+                    },
+                    "severity": "medium",
+                    "confidence": 0.85,
+                    "description": "Dark mode does not work properly in the settings menu",
+                    "is_actionable": true,
+                    "priority_score": 0.7,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-003",
+                    "type": "performance",
+                    "context": {
+                      "impact": "affects user satisfaction",
+                      "feature_area": "system_resources",
+                      "reproducibility": null
+                    },
+                    "severity": "high",
+                    "confidence": 0.8,
+                    "description": "Battery life has gotten worse after the last update",
+                    "is_actionable": false,
+                    "priority_score": 0.85,
+                    "needs_investigation": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-001",
+                    "confidence": 0.9,
+                    "description": "Implement file upload size validation and chunked upload mechanism",
+                    "prerequisites": [
+                      "Investigate current file upload size limits"
+                    ],
+                    "estimated_effort": "medium",
+                    "suggested_timeline": "short-term"
+                  },
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-002",
+                    "confidence": 0.85,
+                    "description": "Apply dark mode theme consistently across settings menu",
+                    "prerequisites": [],
+                    "estimated_effort": "low",
+                    "suggested_timeline": "short-term"
+                  }
+                ],
+                "business_impact": {
+                  "severity": "high",
+                  "confidence": 0.9,
+                  "affected_areas": [
+                    "user_experience",
+                    "core_functionality",
+                    "system_performance"
+                  ],
+                  "metrics_impact": {
+                    "app_rating": true,
+                    "user_retention": true,
+                    "user_acquisition": false
+                  },
+                  "recommendation": "Prioritize fixing app crashes during file uploads and ensure dark mode consistency."
+                },
+                "unactionable_reason": "Battery consumption issue requires investigation to identify root cause before actions can be determined."
+              },
+              "opportunities": {
+                "error": null,
+                "market_opportunities": [
+                  {
+                    "id": "OPP-002",
+                    "type": "feature_gap",
+                    "title": "Shared Workspaces for Teams",
+                    "evidence": {
+                      "review_count": 1,
+                      "user_sentiment": 0.5,
+                      "review_snippets": [
+                        {
+                          "text": "miss their collaborative features",
+                          "review_id": "REV-002",
+                          "sentiment": -0.3
+                        }
+                      ],
+                      "mention_frequency": 1.0
+                    },
+                    "description": "Develop shared workspace features to enhance team collaboration, addressing the gap compared to Competitor X.",
+                    "implementation": {
+                      "risks": [
+                        {
+                          "severity": "medium",
+                          "mitigation": "Provide comprehensive onboarding and user support",
+                          "description": "User adoption may be slow due to learning curve."
+                        }
+                      ],
+                      "complexity": "high",
+                      "dependencies": [
+                        "integrated communication tools",
+                        "cloud storage options"
+                      ],
+                      "estimated_timeline": "4-6 months",
+                      "required_resources": [
+                        "development_team",
+                        "product_manager",
+                        "UI/UX_designer"
+                      ]
+                    },
+                    "prioritization": {
+                      "score": 0.88,
+                      "factors": [
+                        {
+                          "name": "user demand for collaboration",
+                          "score": 0.9,
+                          "weight": 0.5
+                        },
+                        {
+                          "name": "competitive advantage potential",
+                          "score": 0.85,
+                          "weight": 0.5
+                        }
+                      ],
+                      "time_sensitivity": "medium",
+                      "strategic_alignment": 0.9
+                    },
+                    "impact_analysis": {
+                      "user_segments": [
+                        "team_users",
+                        "collaborative_workers"
+                      ],
+                      "affected_metrics": [
+                        {
+                          "metric": "user_retention",
+                          "confidence": 0.9,
+                          "predicted_impact": 0.5
+                        },
+                        {
+                          "metric": "user_acquisition",
+                          "confidence": 0.85,
+                          "predicted_impact": 0.6
+                        }
+                      ],
+                      "potential_impact": "high",
+                      "competitive_position": {
+                        "current_state": "behind in collaborative features",
+                        "potential_advantage": "strong UI/UX can attract teams",
+                        "competitor_comparison": [
+                          {
+                            "status": "ahead",
+                            "competitor": "Competitor X"
+                          }
+                        ]
+                      }
+                    },
+                    "confidence_score": 0.92
+                  }
+                ]
+              },
+              "aspects_attempts": 0,
+              "roadmap_attempts": 0,
+              "positive_feedback": {
+                "error": null,
+                "key_values": [
+                  {
+                    "frequency": 1,
+                    "user_quote": "I love how easy it is to navigate!",
+                    "description": "Enhanced user experience and satisfaction",
+                    "impact_area": "satisfaction",
+                    "sentiment_score": 0.92
+                  },
+                  {
+                    "frequency": 2,
+                    "user_quote": "It helps me complete my tasks faster.",
+                    "description": "Improved productivity through efficient design",
+                    "impact_area": "productivity",
+                    "sentiment_score": 0.9
+                  }
+                ],
+                "delight_factors": [
+                  {
+                    "wow_factor": 0.85,
+                    "description": "Unexpected time savings from automation features",
+                    "viral_potential": 0.75,
+                    "unexpected_benefit": "Gives users more free time for creative tasks"
+                  },
+                  {
+                    "wow_factor": 0.88,
+                    "description": "Visual appeal of the interface",
+                    "viral_potential": 0.7,
+                    "unexpected_benefit": null
+                  }
+                ],
+                "success_stories": [
+                  {
+                    "title": "User experiences significant time savings",
+                    "impact": "Enhanced productivity and reduced stress levels.",
+                    "description": "A user highlighted how task automation has improved their workflow.",
+                    "user_segment": "business_users",
+                    "supporting_metrics": {
+                      "time_saved_hours": 2.0
+                    },
+                    "replication_potential": 0.95
+                  }
+                ],
+                "competitive_edges": {
+                  "Design": "The interface is more visually appealing than others on the market.",
+                  "Automation": "The automation feature is more advanced than competitors."
+                },
+                "retention_drivers": [
+                  {
+                    "retention_impact": 0.9,
+                    "feature_or_aspect": "Task Automation",
+                    "repeat_usage_rate": 0.85,
+                    "user_testimonials": [
+                      "I keep coming back for the automation."
+                    ],
+                    "user_stickiness_factor": 0.93
+                  }
+                ],
+                "satisfaction_score": 0.94,
+                "successful_features": [
+                  {
+                    "feature_name": "User Navigation",
+                    "user_segments": [
+                      "general_users",
+                      "new_users"
+                    ],
+                    "success_metrics": {
+                      "usability_score": 0.95
+                    },
+                    "positive_mentions": [
+                      "easy",
+                      "intuitive",
+                      "user-friendly"
+                    ],
+                    "competitive_advantage": "Superior navigation compared to competitors"
+                  },
+                  {
+                    "feature_name": "Task Automation",
+                    "user_segments": [
+                      "business_users"
+                    ],
+                    "success_metrics": {
+                      "time_saved_minutes": 30.0
+                    },
+                    "positive_mentions": [
+                      "saves time",
+                      "automates tasks"
+                    ],
+                    "competitive_advantage": "Automates repetitive tasks effectively"
+                  }
+                ],
+                "growth_opportunities": [
+                  "Expand automation features to include more tasks",
+                  "Enhance user interface based on feedback"
+                ],
+                "brand_advocates_percentage": 0.85
+              },
+              "sentiment_attempts": 0,
+              "action_items_attempts": 0,
+              "opportunities_attempts": 0,
+              "response_recommendation": {
+                "error": null,
+                "context": {
+                  "platform": null,
+                  "user_segment": null,
+                  "related_issues": [
+                    "The app crashes sometimes."
+                  ],
+                  "user_sentiment": 0.7,
+                  "related_positives": [
+                    "The new dark mode is loved."
+                  ]
+                },
+                "metadata": {},
+                "strategy": {
+                  "tone": {
+                    "primary_tone": "appreciative",
+                    "secondary_tone": "apologetic",
+                    "formality_level": "neutral",
+                    "personalization_level": 0.8
+                  },
+                  "priority": "high",
+                  "key_points": [
+                    "Acknowledge the user's enjoyment of the new dark mode.",
+                    "Apologize for the crashing issue and convey commitment to resolve it.",
+                    "Thank the user for their valuable feedback."
+                  ],
+                  "commitments": [
+                    {
+                      "timeline": "within 24 hours",
+                      "conditions": [],
+                      "commitment_type": "investigate",
+                      "confidence_level": 0.9
+                    }
+                  ],
+                  "should_respond": true,
+                  "public_response": true
+                },
+                "response_id": null,
+                "follow_up_needed": false,
+                "response_required": true,
+                "follow_up_timeline": null,
+                "suggested_response": "Thank you for your feedback! We're delighted to hear you love the new dark mode. We sincerely apologize for the crashes you've experienced and are currently investigating this issue to ensure a better experience. Your input is invaluable to us!",
+                "response_guidelines": [
+                  "Do: Acknowledge both positive and negative points.",
+                  "Do: Express gratitude for feedback.",
+                  "Do: Assure the user that issues are being addressed.",
+                  "Don't: Make specific promises about fix timelines unless certain."
+                ],
+                "alternative_responses": [
+                  "Thanks for your kind words about the dark mode! We're sorry to hear about the crashes and are working diligently to fix them. We appreciate your feedback!",
+                  "We are grateful for your review! It's great to know you enjoy the dark mode. We're aware of the crashing issue and are actively addressing it. Your feedback helps us improve!"
+                ]
+              },
+              "positive_feedback_attempts": 0,
+              "response_recommendation_attempts": 0
+            },
+            "created_at": "2025-03-11T11:55:23+00:00"
+          },
+          {
+            "content": "Good",
+            "analysis": {
+              "aspects": {
+                "error": null,
+                "topics": [
+                  {
+                    "name": "App Performance",
+                    "keywords": [
+                      "crashes",
+                      "battery drain"
+                    ],
+                    "sentiment": "negative",
+                    "confidence": 0.85
+                  },
+                  {
+                    "name": "User Interface",
+                    "keywords": [
+                      "UI",
+                      "beautiful",
+                      "easy to use",
+                      "dark mode"
+                    ],
+                    "sentiment": "positive",
+                    "confidence": 0.9
+                  }
+                ],
+                "user_intent": {
+                  "primary": "report_issues",
+                  "secondary": "provide_feedback",
+                  "confidence": 0.85
+                },
+                "identified_features": [
+                  {
+                    "name": "User Interface",
+                    "category": "UI/UX",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 35,
+                          "start": 4
+                        },
+                        "text": "new UI is beautiful and easy to use",
+                        "context": "The new UI is beautiful and easy to use."
+                      },
+                      {
+                        "span": {
+                          "end": 121,
+                          "start": 100
+                        },
+                        "text": "new dark mode feature",
+                        "context": "Love the new dark mode feature!"
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.9,
+                      "confidence": 0.95
+                    },
+                    "importance_score": 0.85
+                  },
+                  {
+                    "name": "Photo Upload",
+                    "category": "Functionality",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 77,
+                          "start": 50
+                        },
+                        "text": "app crashes when uploading photos",
+                        "context": "However, the app crashes when uploading photos."
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.8,
+                      "confidence": 0.9
+                    },
+                    "importance_score": 0.9
+                  },
+                  {
+                    "name": "Battery Usage",
+                    "category": "Performance",
+                    "mentions": [
+                      {
+                        "span": {
+                          "end": 108,
+                          "start": 82
+                        },
+                        "text": "drains my battery too fast",
+                        "context": "and drains my battery too fast."
+                      }
+                    ],
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.85,
+                      "confidence": 0.9
+                    },
+                    "importance_score": 0.95
+                  }
+                ]
+              },
+              "roadmap": {
+                "error": null,
+                "execution_plan": {
+                  "quarters": [
+                    {
+                      "theme": "Stability & Performance",
+                      "quarter": "Q3",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "App Crash Hotfix",
+                          "initiative_id": "INIT-001",
+                          "success_criteria": [
+                            "Crash-free sessions increase by 99%"
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 70.0
+                        }
+                      ]
+                    },
+                    {
+                      "theme": "Feature Expansion",
+                      "quarter": "Q4",
+                      "key_deliverables": [
+                        {
+                          "deliverable": "Excel Export Feature",
+                          "initiative_id": "INIT-002",
+                          "success_criteria": [
+                            "5% of active users utilize export feature monthly"
+                          ]
+                        }
+                      ],
+                      "resource_allocation": [
+                        {
+                          "team": "engineering",
+                          "allocation_percentage": 50.0
+                        },
+                        {
+                          "team": "product_design",
+                          "allocation_percentage": 20.0
+                        }
+                      ]
+                    }
+                  ],
+                  "success_metrics": [
+                    {
+                      "metric": "crash_free_sessions",
+                      "data_source": "analytics_platform",
+                      "target_value": 0.99,
+                      "current_value": 0.9,
+                      "measurement_frequency": "daily"
+                    },
+                    {
+                      "metric": "excel_export_usage",
+                      "data_source": "app_telemetry",
+                      "target_value": 0.05,
+                      "current_value": 0.0,
+                      "measurement_frequency": "monthly"
+                    }
+                  ]
+                },
+                "strategic_initiatives": [
+                  {
+                    "id": "INIT-001",
+                    "type": "fix",
+                    "title": "Address App Stability Issues",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.95,
+                          "reference_id": "REVIEW-CRASH-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "short_term",
+                      "milestones": [
+                        {
+                          "title": "Identify Root Cause",
+                          "description": "Pinpoint the exact cause of app crashes.",
+                          "target_date": "2025-07-10"
+                        },
+                        {
+                          "title": "Deploy Hotfix",
+                          "description": "Release an urgent update to address critical crashing bugs.",
+                          "target_date": "2025-07-15"
+                        }
+                      ],
+                      "dependencies": [],
+                      "target_quarter": "Q3",
+                      "estimated_duration": "1-2 weeks"
+                    },
+                    "description": "Investigate and resolve the app crashing issues reported by users to enhance stability and user experience.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "user_retention",
+                          "score": 0.95,
+                          "weight": 0.6,
+                          "justification": "Crashes directly impact user retention."
+                        }
+                      ],
+                      "overall_score": 0.9,
+                      "cost_benefit_ratio": 0.8,
+                      "strategic_alignment": 0.9
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Improve App Store Rating",
+                          "metrics": [
+                            {
+                              "name": "app_rating",
+                              "predicted_change": 0.5
+                            }
+                          ],
+                          "impact_score": 0.8
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "all_app_usage"
+                        ],
+                        "improvement_areas": [
+                          "stability",
+                          "reliability"
+                        ],
+                        "predicted_satisfaction_impact": 0.7
+                      }
+                    }
+                  },
+                  {
+                    "id": "INIT-002",
+                    "type": "feature",
+                    "title": "Implement Data Export to Excel",
+                    "source": {
+                      "derived_from": [
+                        {
+                          "type": "user_feedback",
+                          "confidence": 0.85,
+                          "reference_id": "REVIEW-EXPORT-001"
+                        }
+                      ],
+                      "supporting_metrics": []
+                    },
+                    "status": "proposed",
+                    "timeline": {
+                      "phase": "medium_term",
+                      "milestones": [
+                        {
+                          "title": "Feature Design Complete",
+                          "description": "Finalize UI/UX and technical design for export feature.",
+                          "target_date": "2025-09-01"
+                        },
+                        {
+                          "title": "Initial Release",
+                          "description": "Launch the first version of the Excel export feature.",
+                          "target_date": "2025-10-15"
+                        }
+                      ],
+                      "dependencies": [
+                        "data_schema_finalization"
+                      ],
+                      "target_quarter": "Q4",
+                      "estimated_duration": "1-2 months"
+                    },
+                    "description": "Add a feature allowing users to export their data from the app directly to an Excel spreadsheet.",
+                    "prioritization": {
+                      "factors": [
+                        {
+                          "name": "user_demand",
+                          "score": 0.8,
+                          "weight": 0.5,
+                          "justification": "Multiple users have requested this feature."
+                        }
+                      ],
+                      "overall_score": 0.75,
+                      "cost_benefit_ratio": 0.6,
+                      "strategic_alignment": 0.7
+                    },
+                    "impact_assessment": {
+                      "business_goals": [
+                        {
+                          "goal": "Increase User Engagement",
+                          "metrics": [
+                            {
+                              "name": "daily_active_users",
+                              "predicted_change": 0.1
+                            }
+                          ],
+                          "impact_score": 0.7
+                        }
+                      ],
+                      "risk_assessment": [],
+                      "user_experience": {
+                        "affected_journeys": [
+                          "data_management"
+                        ],
+                        "improvement_areas": [
+                          "data_portability",
+                          "integration"
+                        ],
+                        "predicted_satisfaction_impact": 0.6
+                      }
+                    }
+                  }
+                ]
+              },
+              "review_id": "57f19951-ecc4-4a6f-b84d-c5374290bf42",
+              "sentiment": {
+                "error": null,
+                "overall": {
+                  "score": 0.1,
+                  "confidence": 0.85,
+                  "distribution": {
+                    "neutral": 0.2,
+                    "negative": 0.5,
+                    "positive": 0.3
+                  },
+                  "classification": "mixed"
+                },
+                "emotions": {
+                  "primary": {
+                    "emotion": "frustration",
+                    "confidence": 0.75
+                  },
+                  "secondary": {
+                    "emotion": "joy",
+                    "confidence": 0.25
+                  },
+                  "emotion_scores": {
+                    "joy": 0.3,
+                    "frustration": 0.7
+                  }
+                },
+                "segments": [
+                  {
+                    "span": {
+                      "end": 17,
+                      "start": 0
+                    },
+                    "text": "I love this app!",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.8,
+                      "confidence": 0.9
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 66,
+                      "start": 18
+                    },
+                    "text": "It's so easy to use and has all the features I need.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.7,
+                      "confidence": 0.85
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 119,
+                      "start": 67
+                    },
+                    "text": "I'm so frustrated with the app because it keeps crashing.",
+                    "sentiment": {
+                      "label": "negative",
+                      "score": -0.9,
+                      "confidence": 0.95
+                    }
+                  },
+                  {
+                    "span": {
+                      "end": 175,
+                      "start": 120
+                    },
+                    "text": "I'm so happy with the app because it's so easy to use.",
+                    "sentiment": {
+                      "label": "positive",
+                      "score": 0.85,
+                      "confidence": 0.9
+                    }
+                  }
+                ]
+              },
+              "action_items": {
+                "error": null,
+                "issues": [
+                  {
+                    "id": "ISS-001",
+                    "type": "bug",
+                    "context": {
+                      "impact": "prevents core functionality",
+                      "feature_area": "file_upload",
+                      "reproducibility": "specific_condition"
+                    },
+                    "severity": "high",
+                    "confidence": 0.95,
+                    "description": "The app keeps crashing when uploading large files.",
+                    "is_actionable": true,
+                    "priority_score": 0.9,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-002",
+                    "type": "ux_issue",
+                    "context": {
+                      "impact": "affects usability",
+                      "feature_area": "ui_theme",
+                      "reproducibility": "consistent"
+                    },
+                    "severity": "medium",
+                    "confidence": 0.85,
+                    "description": "The dark mode does not work properly in the settings menu.",
+                    "is_actionable": true,
+                    "priority_score": 0.7,
+                    "needs_investigation": false
+                  },
+                  {
+                    "id": "ISS-003",
+                    "type": "performance",
+                    "context": {
+                      "impact": "affects user satisfaction",
+                      "feature_area": "system_resources",
+                      "reproducibility": null
+                    },
+                    "severity": "high",
+                    "confidence": 0.8,
+                    "description": "Battery life has gotten worse after the last update.",
+                    "is_actionable": false,
+                    "priority_score": 0.85,
+                    "needs_investigation": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-001",
+                    "confidence": 0.9,
+                    "description": "Implement file upload size validation and chunked upload mechanism.",
+                    "prerequisites": [
+                      "Investigate current file upload size limits."
+                    ],
+                    "estimated_effort": "medium",
+                    "suggested_timeline": "short-term"
+                  },
+                  {
+                    "type": "fix",
+                    "issue_id": "ISS-002",
+                    "confidence": 0.85,
+                    "description": "Apply dark mode theme consistently across settings menu.",
+                    "prerequisites": [],
+                    "estimated_effort": "low",
+                    "suggested_timeline": "short-term"
+                  }
+                ],
+                "business_impact": {
+                  "severity": "high",
+                  "confidence": 0.9,
+                  "affected_areas": [
+                    "user_experience",
+                    "core_functionality",
+                    "system_performance"
+                  ],
+                  "metrics_impact": {
+                    "app_rating": true,
+                    "user_retention": true,
+                    "user_acquisition": false
+                  },
+                  "recommendation": "Prioritize fixing file upload crashes and address dark mode inconsistencies."
+                },
+                "unactionable_reason": "Battery consumption issue requires investigation to identify root cause before actions can be determined."
+              },
+              "opportunities": {
+                "error": null,
+                "market_opportunities": [
+                  {
+                    "id": "OPP-002",
+                    "type": "feature_gap",
+                    "title": "Shared Workspaces for Teams",
+                    "evidence": {
+                      "review_count": 1,
+                      "user_sentiment": 0.5,
+                      "review_snippets": [
+                        {
+                          "text": "would love to see shared workspaces like Competitor X has",
+                          "review_id": "REV-002",
+                          "sentiment": 0.2
+                        }
+                      ],
+                      "mention_frequency": 1.0
+                    },
+                    "description": "Develop shared workspaces to enhance collaboration among users, addressing the needs highlighted in user reviews.",
+                    "implementation": {
+                      "risks": [
+                        {
+                          "severity": "high",
+                          "mitigation": "Conduct user testing and gather feedback before full deployment",
+                          "description": "Potential user dissatisfaction with new features if poorly implemented"
+                        },
+                        {
+                          "severity": "medium",
+                          "mitigation": "Incrementally develop features and prioritize based on user feedback",
+                          "description": "Technical challenges integrating collaborative features"
+                        }
+                      ],
+                      "complexity": "medium",
+                      "dependencies": [
+                        "user interface design",
+                        "database updates"
+                      ],
+                      "estimated_timeline": "2-3 months",
+                      "required_resources": [
+                        "development_team",
+                        "project_manager",
+                        "QA_team"
+                      ]
+                    },
+                    "prioritization": {
+                      "score": 0.9,
+                      "factors": [
+                        {
+                          "name": "user demand for collaboration",
+                          "score": 0.95,
+                          "weight": 0.5
+                        },
+                        {
+                          "name": "competitive pressure from Competitor X",
+                          "score": 0.85,
+                          "weight": 0.3
+                        }
+                      ],
+                      "time_sensitivity": "medium",
+                      "strategic_alignment": 0.9
+                    },
+                    "impact_analysis": {
+                      "user_segments": [
+                        "team_users",
+                        "collaborative_users"
+                      ],
+                      "affected_metrics": [
+                        {
+                          "metric": "user_retention",
+                          "confidence": 0.9,
+                          "predicted_impact": 0.5
+                        },
+                        {
+                          "metric": "team_user_growth",
+                          "confidence": 0.88,
+                          "predicted_impact": 0.6
+                        }
+                      ],
+                      "potential_impact": "high",
+                      "competitive_position": {
+                        "current_state": "behind in collaborative features compared to Competitor X",
+                        "potential_advantage": "strong existing user base with high satisfaction",
+                        "competitor_comparison": [
+                          {
+                            "status": "ahead",
+                            "competitor": "Competitor X"
+                          }
+                        ]
+                      }
+                    },
+                    "confidence_score": 0.85
+                  }
+                ]
+              },
+              "aspects_attempts": 0,
+              "roadmap_attempts": 0,
+              "positive_feedback": {
+                "error": null,
+                "key_values": [
+                  {
+                    "frequency": 1,
+                    "user_quote": "The new features are fantastic!",
+                    "description": "Excellent user experience with new features",
+                    "impact_area": "satisfaction",
+                    "sentiment_score": 0.9
+                  }
+                ],
+                "delight_factors": [
+                  {
+                    "wow_factor": 0.85,
+                    "description": "Enhanced functionality that exceeds user expectations",
+                    "viral_potential": 0.75,
+                    "unexpected_benefit": "Users feel empowered by the new capabilities"
+                  }
+                ],
+                "success_stories": [
+                  {
+                    "title": "User Thrilled by New Features",
+                    "impact": "Increased user retention and satisfaction.",
+                    "description": "A user expressed delight over the new functionalities that significantly improved their workflow.",
+                    "user_segment": "general_users",
+                    "supporting_metrics": {
+                      "feature_adoption_rate": 0.8
+                    },
+                    "replication_potential": 0.8
+                  }
+                ],
+                "competitive_edges": {
+                  "Innovation": "Stands out with cutting-edge features."
+                },
+                "retention_drivers": [
+                  {
+                    "retention_impact": 0.8,
+                    "feature_or_aspect": "User-Friendly Updates",
+                    "repeat_usage_rate": null,
+                    "user_testimonials": [
+                      "I love the updates!"
+                    ],
+                    "user_stickiness_factor": 0.85
+                  }
+                ],
+                "satisfaction_score": 0.9,
+                "successful_features": [
+                  {
+                    "feature_name": "New Features",
+                    "user_segments": [
+                      "all_users"
+                    ],
+                    "success_metrics": {
+                      "user_engagement_score": 0.9
+                    },
+                    "positive_mentions": [
+                      "fantastic",
+                      "helpful"
+                    ],
+                    "competitive_advantage": "Offers unique functionalities not found in competitors"
+                  }
+                ],
+                "growth_opportunities": [
+                  "Expand marketing to highlight new features",
+                  "Gather user feedback for continuous improvement"
+                ],
+                "brand_advocates_percentage": 0.95
+              },
+              "sentiment_attempts": 0,
+              "action_items_attempts": 0,
+              "opportunities_attempts": 0,
+              "response_recommendation": {
+                "error": null,
+                "context": {
+                  "platform": "app_store",
+                  "user_segment": "general_user",
+                  "related_issues": [
+                    "The app crashes sometimes."
+                  ],
+                  "user_sentiment": 0.7,
+                  "related_positives": [
+                    "Loves the new dark mode."
+                  ]
+                },
+                "metadata": {
+                  "channel": "app_store_review"
+                },
+                "strategy": {
+                  "tone": {
+                    "primary_tone": "appreciative",
+                    "secondary_tone": "apologetic",
+                    "formality_level": "neutral",
+                    "personalization_level": 0.8
+                  },
+                  "priority": "high",
+                  "key_points": [
+                    "Acknowledge positive feedback about dark mode.",
+                    "Apologize for crashes and assure investigation.",
+                    "Thank user for their feedback."
+                  ],
+                  "commitments": [
+                    {
+                      "timeline": "within 24 hours",
+                      "conditions": [],
+                      "commitment_type": "investigate",
+                      "confidence_level": 0.9
+                    }
+                  ],
+                  "should_respond": true,
+                  "public_response": true
+                },
+                "response_id": "RESP-001",
+                "follow_up_needed": false,
+                "response_required": true,
+                "follow_up_timeline": null,
+                "suggested_response": "Thank you for your feedback! We're thrilled you love the new dark mode. We apologize for the crashes you've experienced and are actively investigating this issue to provide a stable experience. Your input is valuable!",
+                "response_guidelines": [
+                  "Do: Acknowledge both positive and negative points.",
+                  "Do: Express gratitude for feedback.",
+                  "Do: Assure the user that issues are being addressed.",
+                  "Don't: Make specific promises about fix timelines unless certain."
+                ],
+                "alternative_responses": [
+                  "We appreciate your kind words about the dark mode! We're sorry to hear about the crashes and are working to fix them. Thanks for letting us know!",
+                  "Thanks for your review! Glad you like the dark mode. We're aware of the crashing issue and are on it. Your feedback helps us improve!"
+                ]
+              },
+              "positive_feedback_attempts": 0,
+              "response_recommendation_attempts": 0
+            },
+            "created_at": "2025-03-11T18:03:25+00:00"
+          }
+        ]
+      }
+    ]
+  },
+  "node_history": [
+    {
+      "node_name": "summarize_reviews",
+      "response": {
+        "summary_date": "2025-06-27",
+        "app_id": "com.example.app",
+        "sentiment_distribution": {
+          "positive": 0.35,
+          "neutral": 0.1,
+          "negative": 0.55
+        },
+        "issue_groups": [
+          {
+            "normalized_description": "App crashes frequently",
+            "count": 1,
+            "similar_descriptions": [
+              "App crashes frequently"
+            ],
+            "severity_distribution": {
+              "critical": 1
+            },
+            "confidence_sum": 0.95,
+            "avg_priority_score": 0.95,
+            "feature_areas": {
+              "core_functionality": 1
+            }
+          }
+        ],
+        "feature_areas": {
+          "User Experience": {
+            "total_issues": 0,
+            "severity_distribution": {},
+            "issue_types": {},
+            "avg_sentiment": 0.8
+          },
+          "Stability": {
+            "total_issues": 1,
+            "severity_distribution": {
+              "critical": 1
+            },
+            "issue_types": {
+              "bug": 1
+            },
+            "avg_sentiment": -0.9
+          }
+        },
+        "actions": [
+          {
+            "type": "fix",
+            "count": 1,
+            "effort_distribution": {
+              "high": 1
+            },
+            "timeline_distribution": {
+              "1 week": 1
+            },
+            "related_issues": [
+              "ISS-001"
+            ]
+          }
+        ],
+        "business_impact": {
+          "severity": "high",
+          "affected_areas": [
+            "user_experience",
+            "app_rating"
+          ],
+          "metrics_impact": {
+            "user_retention": true,
+            "app_rating": true,
+            "user_acquisition": false
+          },
+          "recommendation": "Prioritize fixing crashes",
+          "confidence": 0.95
+        },
+        "error": null
+      }
+    }
+  ],
+  "current_step": "summarize_reviews",
+  "error": null
+}

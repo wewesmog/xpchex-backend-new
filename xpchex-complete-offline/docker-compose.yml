@@ -1,0 +1,39 @@
+version: '3.8' 
+ 
+services: 
+  postgres: 
+    image: postgres:15-alpine 
+    container_name: xpchex-postgres 
+    environment: 
+      POSTGRES_DB: xpchex 
+      POSTGRES_USER: xpchex_user 
+      POSTGRES_PASSWORD: xpchex_password 
+    volumes: 
+      - postgres_data:/var/lib/postgresql/data 
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql 
+    ports: 
+      - "5432:5432" 
+    restart: unless-stopped 
+ 
+  backend: 
+    build: ./backend 
+    container_name: xpchex-backend 
+    environment: 
+      DATABASE_URL: postgresql://xpchex_user:xpchex_password@postgres:5432/xpchex 
+    ports: 
+      - "8000:8000" 
+    depends_on: 
+      - postgres 
+    restart: unless-stopped 
+ 
+  frontend: 
+    build: ./frontend 
+    container_name: xpchex-frontend 
+    ports: 
+      - "3000:3000" 
+    depends_on: 
+      - backend 
+    restart: unless-stopped 
+ 
+volumes: 
+  postgres_data: 
