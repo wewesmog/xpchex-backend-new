@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: xpchex-postgres
+    environment:
+      POSTGRES_DB: xpchex
+      POSTGRES_USER: xpchex_user
+      POSTGRES_PASSWORD: xpchex_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - xpchex-network
+    restart: unless-stopped
+
+  # Python Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: xpchex-backend
+    environment:
+      # Database configuration for local PostgreSQL
+      PGHOST: postgres
+      PGPORT: 5432
+      PGDATABASE: xpchex
+      PGUSER: xpchex_user
+      PGPASSWORD: xpchex_password
+      # Remove SSL requirement for local database
+      DB_SSL_MODE: disable
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    networks:
+      - xpchex-network
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Next.js Frontend
+  frontend:
+    build:
+      context: ../xpchex_frontend_new
+      dockerfile: Dockerfile
+    container_name: xpchex-frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - xpchex-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  xpchex-network:
+    driver: bridge
